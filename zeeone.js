@@ -71,7 +71,8 @@ alpha.on('group-participants-update', async (anu) => {
         teks = `Welcome @${num.split('@')[0]} ${enter}${enter}📛 : _${anu_user}_${enter}💌 : _${p3}_${enter}🔣 : _@${num.split('@')[0]}_${enter}🥉: _${memeg}_${enter}⏰ : _${jamnyy} Indonesian time_${enter}${enter}\`\`\`Hope you like it and don't forget to read the group description\`\`\``;
         buff = await getBuffer(pp_user)
          buttons = [
-          { buttonId: `hmm`, buttonText: { displayText: "Welcome👋" }, type: 1 }
+          { buttonId: `owner`, buttonText: { displayText: "Owner" }, type: 1 },
+            { buttonId: `menu`, buttonText: { displayText: "Menu" }, type: 1 }
         ];
         imageMsg = (
           await alpha.prepareMessageMedia(buff, "imageMessage", {
@@ -80,7 +81,7 @@ alpha.on('group-participants-update', async (anu) => {
         ).imageMessage;
         buttonsMessage = {
           contentText: `${teks}`,
-          footerText: "Enjoy by MhyckaBotz ☕",
+          footerText: "Welcome Message by ArulBotz☕",
           imageMessage: imageMsg,
           buttons: buttons,
           headerType: 4,
@@ -104,7 +105,7 @@ alpha.on('group-participants-update', async (anu) => {
         out = `◪ Goodbye @${num.split('@')[0]}${enter}◪ Leave from group:${enter}${mdata.subject}${enter}│${enter}└─ ❏ Nomor: ${num.replace('@s.whatsapp.net', '')}${enter}GoodBye~~`;
         buff = await getBuffer(pp_user);
           buttons = [
-          { buttonId: `y`, buttonText: { displayText: "Goodbye 👋" }, type: 1 },
+          { buttonId: `menu`, buttonText: { displayText: "Menu" }, type: 1 },
         ];
         imageMsg = (
           await alpha.prepareMessageMedia(buff, "imageMessage", {
@@ -113,7 +114,7 @@ alpha.on('group-participants-update', async (anu) => {
         ).imageMessage;
         buttonsMessage = {
           contentText: `${out}`,
-          footerText: "Don't come back here again by @mhyckaherviananda",
+          footerText: "Leave Message by ArulBotz",
           imageMessage: imageMsg,
           buttons: buttons,
           headerType: 4,
