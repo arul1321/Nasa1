@@ -71,8 +71,7 @@ alpha.on('group-participants-update', async (anu) => {
         teks = `Welcome @${num.split('@')[0]} ${enter}${enter}📛 : _${anu_user}_${enter}💌 : _${p3}_${enter}🔣 : _@${num.split('@')[0]}_${enter}🥉: _${memeg}_${enter}⏰ : _${jamnyy} Indonesian time_${enter}${enter}\`\`\`Hope you like it and don't forget to read the group description\`\`\``;
         buff = await getBuffer(pp_user)
          buttons = [
-          { buttonId: `#owner`, buttonText: { displayText: "Owner" }, type: 1 },
-            { buttonId: `#menu`, buttonText: { displayText: "Menu" }, type: 1 }
+          { buttonId: `#owner`, buttonText: { displayText: "Owner" }, type: 1 }, { buttonId: `#menu`, buttonText: { displayText: "Menu" }, type: 1 }
         ];
         imageMsg = (
           await alpha.prepareMessageMedia(buff, "imageMessage", {
