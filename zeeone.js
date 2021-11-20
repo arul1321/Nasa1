@@ -71,7 +71,7 @@ alpha.on('group-participants-update', async (anu) => {
         teks = `Welcome @${num.split('@')[0]} ${enter}${enter}📛 : _${anu_user}_${enter}💌 : _${p3}_${enter}🔣 : _@${num.split('@')[0]}_${enter}🥉: _${memeg}_${enter}⏰ : _${jamnyy} Indonesian time_${enter}${enter}\`\`\`Hope you like it and don't forget to read the group description\`\`\``;
         buff = await getBuffer(pp_user)
          buttons = [
-          { buttonId: `#owner`, buttonText: { displayText: "Owner" }, type: 1 }, { buttonId: `#menu`, buttonText: { displayText: "Menu" }, type: 1 }
+          { buttonId: `#help`, buttonText: { displayText: "Menu" }, type: 1 }
         ];
         imageMsg = (
           await alpha.prepareMessageMedia(buff, "imageMessage", {
@@ -104,7 +104,7 @@ alpha.on('group-participants-update', async (anu) => {
         out = `◪ Goodbye @${num.split('@')[0]}${enter}◪ Leave from group:${enter}${mdata.subject}${enter}│${enter}└─ ❏ Nomor: ${num.replace('@s.whatsapp.net', '')}${enter}GoodBye~~`;
         buff = await getBuffer(pp_user);
           buttons = [
-          { buttonId: `#menu`, buttonText: { displayText: "Menu" }, type: 1 },
+          { buttonId: `#help`, buttonText: { displayText: "Menu" }, type: 1 },
         ];
         imageMsg = (
           await alpha.prepareMessageMedia(buff, "imageMessage", {
